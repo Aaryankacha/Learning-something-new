@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Tweet Box
+    </title>
+</head>
+<body>
+<div class="pic">
+    <img class="sloth pic" src="sloth_family_tree.jpg">
+    <div class="tooltip">
+        <span class="tips">settings</span><br>
+        <span class="tips">account</span><br>
+        <span class="tips">feedback</span><br>
+        <span class="tips">logout</span>
+    </div>
+</div>
+<text class="t">What's happening?</text>
+<button class="tw">
+    Tweet
+</button>
+</body>
+<style>
+    .tips{
+        margin-bottom: 20px;
+    }
+    .sloth{
+        width: 75px;
+        height: 75px;
+        object-fit: cover;
+        border-radius: 50px;
+        display: inline-block;
+    }
+    .t{
+        font-size: 30px;
+        vertical-align: middle;
+        color: gray;
+    }
+    .tw{
+        background-color: rgb(39, 39, 248);
+        color: white;
+        border: none;
+        width: 75px;
+        height: 30px;
+        margin-left: 100px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .tw:active{
+        opacity: 0.6;
+        transition: 0.15s;
+    }
+    .tw:hover{
+        opacity: 0.8;
+        transition: 0.15s;
+    }
+.pic{
+    display:block flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.pic .tooltip{
+    font-family: Arial;
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.pic:hover .tooltip{
+    opacity: 1;
+}
+
+
+</style>
+</html>
